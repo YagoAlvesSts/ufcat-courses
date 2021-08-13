@@ -2,7 +2,7 @@
 
 ## Identificação
 
-* Aluno: "coloque aqui o seu nome"
+* Aluno: "Yago Alves dos Santos"
 
 ## Objetivos
 
@@ -145,9 +145,9 @@ Nesta primeira parte, você configurará o ambiente para a realização dos test
 1. Meça os atrasos e jitter da sua estação para a a fonte dos videos. Não é necessário fazê-lo dentro do Mininet. **Importante**: a fonte dos videos não é o endereço do player, mas o endereço indicado no arquivo MPD que descreve a mídia. É importante que este teste seja feito imediatamente antes das demais tarefas do laboratório, pois o atraso pode variar ao longo do dia. Coloque os dados coletados em tabela, seguindo modelo da tabela abaixo. Faça testes durante, ao menos, 1 minuto, para coletar os atrasos (**D**) e jitter (**J**). Meça também a bitrate obtida para essa midia, carregando no player DASH e verificando o melhor valor de bitrate que você obtem em "Basic Statistics"
 
 | N | Tipo de Midia | Midia | Estação | IP      | Bitrate | Dmin | Dmédio | Dmax | Jmédio | Jinter | 
-|---|---------------|-------|---------|---------|---------|------|--------|------|--------|--------| 
-| 1 | Ao vivo       | url   | a.b.com | 1.2.3.4 | 1Mbps   | ? ms | ? ms   | ? ms | ? ms   | ? ms   | 
-| 2 | armazenada    | url   | a.b.com | 1.2.3.4 | 0.5Mpbs | ? ms | ? ms   | ? ms | ? ms   | ? ms   |  | 
+|---|---------------|------|---------|---------|---------|------|--------|------|--------|--------| 
+| 1 | Ao vivo       | https://cph-msl.akamaized.net/dash/live/2003285/test/manifest.mpd   | dash.akamaized.net | 189.6.45.120 | 7.18Mbps   | 11.6 ms | 27.4 ms   | 74.7 ms | 15.0 ms   | 106.3 ms   | 
+| 2 | armazenada    | https://dash.akamaized.net/dash264/TestCases/1a/sony/SNE_DASH_SD_CASE1A_REVISED.mpd   | dash.akamaized.net | 189.6.45.75 | 1.61Mpbs | 15.8 ms | 22.7 ms   | 33.3 ms | 6.7 ms   | 54.8 ms   |  | 
 
 
 2. Determinar o jitter, atraso que serão utilizados no experimento. Escolha 10 valores de atraso, desde o valor mínimo do atraso obtido nas medições até 200 ms. Para cada um desses valores, escolha três valors de jitter: 0, 100% do atraso e 200% o valor do atraso. Coloque os valores escolhidos na tabela abaixo, conforme o modelo.
